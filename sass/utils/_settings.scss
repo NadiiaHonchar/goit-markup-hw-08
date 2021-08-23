@@ -1,0 +1,34 @@
+html{box-sizing: border-box;}
+*,
+*::before,
+*::after 
+{
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body 
+{
+  color: $primary-text-color;
+  background-color:$primary-page-color;
+  font-family: $text-roboto;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+img
+{
+  margin: 0;
+  padding: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+ul
+{
+  @extend %list;
+}

@@ -1,0 +1,207 @@
+.backdrop-form
+{
+    @media screen and (max-width:1199px)
+{
+  width: 450px;
+  height: 609px;
+}
+
+@media screen and (min-width: 1200px)
+{
+  width: 528px;
+  height: 581px;    
+}   
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;       
+}
+  
+.backdrop-form__title
+{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: $title-text-color;
+    margin-bottom: 12px;
+}
+  
+.backdrop-form__description
+{
+    display: flex;
+     font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+  text-align: left;
+  margin-bottom: 4px;         
+}
+  
+.backdrop-form__input
+{    
+    width: 100%;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   height: 41px;
+   margin-bottom: 10px;
+
+   font-family: roboto,sans-serif;
+   color: var(--primary-text-color);
+   font-size: 12px;
+   line-height: 1.2;
+   letter-spacing: 0.01em;
+   padding-left: 42px;
+   &:focus
+   {  
+    outline: none;
+    border-color: $button-color;
+    transition-property: border-color;
+    transition-duration: $time;
+     transition-timing-function: $cubic;
+  }
+          
+}
+  
+.backdrop-form__area
+{    
+    font-family: $text-roboto;
+    color: $primary-text-color;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+  
+.backdrop-form__button
+{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    background-color: $button-color;
+    color: $header-color;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: none;
+}        
+
+.backdrop-form__hiden
+{
+    margin: 0;
+    padding: 0;
+    @extend %visually-hidden;  
+}
+  
+.backdrop-form__check
+{
+    position: relative;
+    @media screen and (max-width:1199px)
+    {
+        font-size: 12px; 
+        letter-spacing: 0.03em;
+         
+    }
+}
+  
+.backdrop-form__checkbox
+{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/Vector.svg);
+    background-size: contain;
+    background-repeat: no-repeat;  
+    @media screen and (max-width:1199px)
+    {
+        font-size: 12px; 
+        letter-spacing: 0.03em;
+         
+    }
+
+}
+  
+.backdrop-form__hiden:checked +.backdrop-form__checkbox
+{
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  
+.backdrop-form__field
+{
+  display: block;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+  
+.backdrop-form__icon
+{
+    position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-20%);
+  display: inline-block;  
+}   
+  
+.backdrop-form__input:focus,
+.backdrop-form__area:focus
+{
+    outline: none;
+    border-color: $button-color;
+    transition-property: border-color;
+   transition-duration: $time;
+    transition-timing-function: $cubic;
+}
+  
+.backdrop-form__input:focus  +.backdrop-form__icon
+{
+    fill: $button-color;  
+    transition-property: fill;
+   transition-duration: $time;
+    transition-timing-function: $cubic;   
+}    
+  
+.backdrop-form__contract:focus,
+.backdrop-form__contract:hover,
+.backdrop-form__contract 
+{
+    color: $secondary-linc-color;  
+    @media screen and (max-width:1199px)
+    {
+        font-size: 12px; 
+        letter-spacing: 0.03em;
+        
+    }
+}
+
+.backdrop-form__area::placeholder
+{
+  color: $primary-text-color;
+  background-color:$primary-page-color;
+  font-family: $text-roboto;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}

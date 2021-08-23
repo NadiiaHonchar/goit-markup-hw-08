@@ -1,0 +1,252 @@
+.footer
+{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-color;
+}
+
+.container-footer   
+{    
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;     
+  align-items: baseline;
+  min-width: 320px;
+  
+  width: 480px;
+    
+  @media screen and (min-width: 768px) and (max-width: 1200px)
+  {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px)
+  {
+    width: 1200px;
+    display: flex;
+  }
+}
+
+.footer-left
+{
+  @media screen and (max-width:768px)
+  {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px)
+  {
+    margin-left: 76px;
+    margin-right: 165px;
+    margin-bottom: 60px;
+    width: 232px;
+
+  }
+  
+  @media screen and (min-width: 1200px)
+  {    
+    margin-right: 70px;
+  }
+}
+
+.logo__footer
+{
+    color:$hero-text-color;
+}
+
+.footer-address
+{ 
+  color: $hero-text-color;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.contact-footer__link
+{
+  color: $footer-text-color;
+  text-decoration: none;
+}
+
+.collor-address{color: $hero-text-color;}
+
+.contact-footer{
+    @extend %list;
+    &:not(:last-child) 
+    {
+        @extend %list;
+        margin-bottom: 9px;
+    }
+}
+
+
+.text-footer
+{
+  text-transform:uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: $hero-text-color;
+  margin-bottom: 20px;
+  @media screen and (max-width: 1200px)
+  {
+    text-align: center;    
+  }
+}
+
+.footer-right
+{
+  @media screen and (max-width: 768px)
+  {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px)
+  {    
+    margin-right: 93px  ;
+  }
+  
+}
+
+.footer-list
+{ 
+    @extend %list;
+    display: flex;
+
+    @media screen and (max-width: 768px)
+  {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
+  
+.footer-list__icon
+{
+  display: flex;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:focus
+  { 
+      background-color: $button-color;
+      transform: rotate(360deg);
+      transition-duration: $time;
+      transition-timing-function: $cubic;
+   }
+}
+  
+.footer-list__margin:not(:last-child)
+{
+    margin-right: 10px;
+}
+
+.footer-list__contact
+{
+ margin: auto;
+  fill: $hero-text-color;    
+}
+
+.footer-form
+{
+  @media screen and (max-width:768px)
+  {
+    justify-content: center;     
+  }
+
+  @media screen and (min-width: 768px) and (max-width:1200px)
+  {
+    margin-left: auto;    
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px)
+  {
+    display: flex;
+    align-items: flex-end;
+    width: 570px;    
+  }      
+}
+
+
+.footer-form input
+{
+  
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: $footer-color;
+  border-radius: 4px;
+  padding-left: 16px;
+  color: $hero-text-color;
+  margin-right: 12px; 
+  width: 450px;  
+  @media screen and (max-width:768px)
+  {    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;   
+  }
+  @media screen and (min-width: 768px) and (max-width:1200px)
+  {        
+    margin-bottom: 20px;   
+  }
+
+  @media screen and (min-width: 1200px)
+  {
+    width: 358px;
+  } 
+}
+
+.footer-form__subscribe
+{
+  display: block;
+  text-transform:uppercase;
+  font-weight: bold;
+  line-height: 1.2;
+  color: $hero-text-color;
+  margin-bottom: 20px;  
+  @media screen and (max-width:1200px)
+  {
+    text-align: center;    
+  }
+}
+
+.footer-form__button
+{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  background-color: $button-color;
+  color: $header-color;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center; 
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 28px 10px 29px;
+  border: none;
+  
+  @media screen and (max-width:1200px)
+  {
+    margin-left: auto; 
+    margin-right: auto;       
+  }  
+}
+
+.logo-secondary 
+{ 
+  color: $title-text-color;
+}

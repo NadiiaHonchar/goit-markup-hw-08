@@ -1,0 +1,70 @@
+.backdrop
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 99;  
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.0);
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+}
+
+.modal
+{
+  position: absolute;
+
+ 
+@media screen and (max-width:1199px)
+{
+  width: 450px;
+  height: 609px;
+}
+
+@media screen and (min-width: 1200px)
+{
+  width: 528px;
+  height: 581px;    
+}
+
+  
+  border-radius: 4px;
+
+  background-color: $primary-page-color;
+
+  transform: scale(1.0);
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+.close
+{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $primary-page-color;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;  
+}
+
+.close-item
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: translate(25%,0); 
+  &:hover
+  {
+    fill: $button-color;
+  }
+}
