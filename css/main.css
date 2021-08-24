@@ -303,7 +303,7 @@ summary {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-list {
     display: none;
   }
@@ -364,9 +364,16 @@ summary {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contact-nav {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -379,8 +386,22 @@ summary {
   }
 }
 
-.contact-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .contact-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-list {
+    margin-right: 84px;
+  }
 }
 
 .contact-nav__link {
@@ -942,15 +963,11 @@ summary {
   background-repeat: no-repeat;
   background-color: #2F303A;
   text-align: center;
-  width: 480px;
-  height: 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundmobile@1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundmobile@1x.jpg);
-  background-size: 480px 400px;
+  background-size: cover;
   padding-top: 118px;
   padding-bottom: 198px;
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
 @media (min: device pixel ratio 2px), (min: resolution 192dpi), (min: resolution 2dppx) {
@@ -962,15 +979,11 @@ summary {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
-    height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundtabl@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundtabl@1x.jpg);
-    background-size: 768px 400px;
+    background-size: cover;
     padding-top: 118px;
     padding-bottom: 198px;
-    padding-left: 204px;
-    padding-right: 204px;
   }
 }
 
@@ -983,12 +996,11 @@ summary {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background@1x.jpg);
-    background-size: 1600px 600px;
-    padding: 200px 452px;
+    background-size: cover;
+    padding: 200px 0;
   }
 }
 
@@ -1012,12 +1024,14 @@ summary {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+  max-width: 360px;
 }
 
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.4;
+    max-width: 696px;
   }
 }
 
@@ -1072,7 +1086,7 @@ summary {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .sdection-is-hiden {
     display: none;
   }
@@ -1159,50 +1173,13 @@ summary {
 }
 
 .feature-list__image {
-  width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
-  padding-left: 192px;
-  padding-right: 192px;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .feature-list__image {
-    width: 354px;
-    padding-left: 144px;
-    padding-right: 144px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .feature-list__image {
-    width: 270px;
-    padding-left: 102px;
-    padding-right: 102px;
-  }
-}
-
-.portrait {
-  width: 450px;
-  height: 460px;
-}
-
-@media screen and (min-width: 768px) {
-  .portrait {
-    width: 354px;
-    height: 374px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portrait {
-    width: 270px;
-    height: 260px;
-  }
+  text-align: center;
 }
 
 .feature-list__bacground {
@@ -1333,7 +1310,7 @@ summary {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .clients-list {
     margin-bottom: -30px;
     margin-left: -30px;
@@ -1348,7 +1325,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list {
     margin-bottom: -30px;
     margin-left: -30px;
@@ -1427,7 +1404,7 @@ summary {
   width: 480px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-footer {
     width: 768px;
     display: -webkit-box;
@@ -1447,14 +1424,14 @@ summary {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-left {
     text-align: center;
     margin-bottom: 60px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-left {
     margin-left: 76px;
     margin-right: 165px;
@@ -1571,7 +1548,7 @@ summary {
   fill: #FFFFFF;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-form {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1579,7 +1556,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form {
     margin-left: auto;
     margin-right: auto;
@@ -1609,7 +1586,7 @@ summary {
   width: 450px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-form input {
     margin-left: auto;
     margin-right: auto;
@@ -1617,7 +1594,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form input {
     margin-bottom: 20px;
   }
@@ -1687,7 +1664,7 @@ summary {
           justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .button-filter {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1701,7 +1678,7 @@ summary {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .button-filter__list:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -1746,7 +1723,7 @@ summary {
           box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .cards-list {
     text-align: center;
   }
@@ -1768,7 +1745,7 @@ summary {
   outline: 1px solid #EEEEEE;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .cards-list__item {
     width: 100%;
   }
@@ -1790,7 +1767,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .cards-list {
     margin-bottom: -30px;
     margin-left: -30px;
@@ -1829,24 +1806,11 @@ summary {
 .thamb {
   position: relative;
   overflow: hidden;
-  height: 294px;
-  width: 450px;
-}
-
-@media screen and (min-width: 768px) {
-  .thamb {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .thamb {
-    width: 370px;
-  }
 }
 
 .size {
-  height: 294px;
+  width: 100%;
+  background-size: cover;
 }
 
 .thamb__overlay-text {
@@ -1909,8 +1873,6 @@ body {
 }
 
 img {
-  margin: 0;
-  padding: 0;
   display: block;
   max-width: 100%;
   height: auto;

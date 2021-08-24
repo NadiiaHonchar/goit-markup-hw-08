@@ -2,7 +2,7 @@
 .cards-list
 {
   box-sizing: border-box;
-  @media screen and (max-width: 768px)
+  @media screen and (max-width: 767px)
   {
     text-align: center;
   }
@@ -19,7 +19,7 @@
   @extend %list;
   margin-bottom: 30px;
   outline: 1px solid #EEEEEE;
-  @media screen and (max-width: 768px)
+  @media screen and (max-width: 767px)
   {
     width: 100%;
     &:last-child
@@ -41,7 +41,7 @@
     }
   }
 }
-@media screen and (min-width:768px) and (max-width:1200px)
+@media screen and (min-width:767px) and (max-width:1199px)
 {
   .cards-list
   {             
@@ -78,23 +78,14 @@
 .thamb 
 {
   position: relative;
-  overflow: hidden;
-  height: 294px;   
-  width: 450px;     
-  
-  @media screen and (min-width: 768px)
-  {    
-    width: 354px;    
-  }  
-  @media screen and (min-width: 1200px)
-  {    
-    width: 370px;     
-  }
+  overflow: hidden;  
+ 
 }
 
 .size
-{
-  height: 294px;
+{    
+  width: 100%;
+  background-size: cover;   
 }
 
 .thamb__overlay-text

@@ -1,10 +1,14 @@
 .contact-nav
 {
   @extend %list;
-  @media screen and (max-width: 768px)
+  @media screen and (max-width: 767px)
   {        
     display: none;
   } 
+  @media screen and (min-width:768px) and (max-width: 1199px)
+  {
+    flex-wrap: wrap;    
+  }
   @media screen and (min-width: 768px)
   {     
     display: flex;
@@ -14,7 +18,22 @@
 
 .contact-nav__item:not(:last-child)
 { 
+  @media screen and (min-width: 768px)
+  {         
+    margin-bottom: 10px;  
+  }
+  @media screen and (min-width: 1200px)
+  {         
     margin-right: 50px;  
+  }
+}
+
+.nav-list
+{
+  @media screen and (min-width: 768px) and (max-width: 1199px)
+  {         
+    margin-right: 84px;  
+  }
 }
 
 .contact-nav__link 

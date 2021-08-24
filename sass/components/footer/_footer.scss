@@ -18,7 +18,7 @@
   
   width: 480px;
     
-  @media screen and (min-width: 768px) and (max-width: 1200px)
+  @media screen and (min-width: 768px) and (max-width: 1199px)
   {
     width: 768px;
     display: flex;
@@ -34,13 +34,13 @@
 
 .footer-left
 {
-  @media screen and (max-width:768px)
+  @media screen and (max-width:767px)
   {
     text-align: center;
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1200px)
+  @media screen and (min-width: 768px) and (max-width: 1199px)
   {
     margin-left: 76px;
     margin-right: 165px;
@@ -160,12 +160,12 @@
 
 .footer-form
 {
-  @media screen and (max-width:768px)
+  @media screen and (max-width:767px)
   {
     justify-content: center;     
   }
 
-  @media screen and (min-width: 768px) and (max-width:1200px)
+  @media screen and (min-width: 768px) and (max-width:1199px)
   {
     margin-left: auto;    
     margin-right: auto;
@@ -191,13 +191,13 @@
   color: $hero-text-color;
   margin-right: 12px; 
   width: 450px;  
-  @media screen and (max-width:768px)
+  @media screen and (max-width:767px)
   {    
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;   
   }
-  @media screen and (min-width: 768px) and (max-width:1200px)
+  @media screen and (min-width: 768px) and (max-width:1199px)
   {        
     margin-bottom: 20px;   
   }

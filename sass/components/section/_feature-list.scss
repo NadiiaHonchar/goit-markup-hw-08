@@ -67,48 +67,14 @@
 }
 
 .feature-list__image
-{
-  width: 450px;
+{ 
   height: 120px;
   background-color: $secondary-page-color;
-  border-radius: 4px;
-  padding-left: 192px;
-  padding-right: 192px;
+  border-radius: 4px;  
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;
-
-    @media screen and (min-width: 768px)
-  {
-    width: 354px;  
-    padding-left: 144px;
-    padding-right: 144px;  
-  }
-
-  @media screen and (min-width: 1200px)
-  {    
-    width: 270px;
-    padding-left: 102px;
-    padding-right: 102px;  
-  }
-
-}
-
-.portrait
-{
-  width: 450px; 
-  height: 460px;
-  
-  @media screen and (min-width: 768px)
-  {    
-    width: 354px; 
-    height: 374px;
-  }  
-  @media screen and (min-width: 1200px)
-  {    
-    width: 270px; 
-    height: 260px;
-  }
+  text-align: center;
 }
 
 .feature-list__bacground

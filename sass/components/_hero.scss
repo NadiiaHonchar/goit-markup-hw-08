@@ -6,12 +6,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $footer-color;
-  text-align: center;  
-    
-  width: 480px;
-  height: 400px;    
+  text-align: center;    
+     
   background-image: linear-gradient(to right, $gradient-color, $gradient-color), url(../images/backgroundmobile@1x.jpg);
-  background-size: 480px 400px;
+  background-size: cover;
 
   @media (min: device pixel ratio 2px),
   (min: resolution 192dpi),
@@ -20,16 +18,12 @@
     background-image: linear-gradient(to right, $gradient-color, $gradient-color), url(../images/backgroundmobile@2x.jpg);
   }
   padding-top: 118px;
-  padding-bottom: 198px;
-  padding-left: 60px;
-  padding-right: 60px;    
+  padding-bottom: 198px;     
 
   @media screen and (min-width: 768px)
-  {
-    width: 768px;
-    height: 400px;    
+  {      
     background-image: linear-gradient(to right, $gradient-color, $gradient-color), url(../images/backgroundtabl@1x.jpg);
-    background-size: 768px 400px;
+    background-size: cover;
 
     @media (min: device pixel ratio 2px),
     (min: resolution 192dpi),
@@ -38,17 +32,14 @@
       background-image: linear-gradient(to right, $gradient-color, $gradient-color), url(../images/backgroundtabl@2x.jpg);
     }
     padding-top: 118px;
-    padding-bottom: 198px;
-    padding-left: 204px;
-    padding-right: 204px;
+    padding-bottom: 198px;    
   }
 
   @media screen and (min-width: 1200px)
   {
-    width: 1600px;
-    height: 600px;    
+    max-width: 1600px;       
     background-image: linear-gradient(to right, $gradient-color, $gradient-color), url(../images/background@1x.jpg);
-    background-size: 1600px 600px;
+    background-size: cover;
     
     @media (min: device pixel ratio 2px),
     (min: resolution 192dpi),
@@ -56,10 +47,9 @@
     {
       background-image: linear-gradient(to right, $gradient-color, $gradient-color), url(../images/background@2x.jpg);
     }
-    padding: 200px 452px;
+    padding: 200px 0;
   }
 }
-
 
 .hero__title 
 { 
@@ -73,11 +63,13 @@
   margin: 0 auto;
   justify-content: center;
   margin-bottom: 30px;
+  max-width: 360px;
   
   @media screen and (min-width: 1200px)
   {    
     font-size: 44px;
-    line-height: 1.4;           
+    line-height: 1.4;
+    max-width: 696px;           
   }
 }
 
