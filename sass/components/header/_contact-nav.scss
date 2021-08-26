@@ -7,7 +7,8 @@
   } 
   @media screen and (min-width:768px) and (max-width: 1199px)
   {
-    flex-wrap: wrap;    
+    flex-wrap: wrap; 
+    flex-direction: column;   
   }
   @media screen and (min-width: 768px)
   {     
@@ -18,21 +19,13 @@
 
 .contact-nav__item:not(:last-child)
 { 
-  @media screen and (min-width: 768px)
+  @media screen and (min-width: 768px) and (max-width: 1199px)
   {         
     margin-bottom: 10px;  
   }
   @media screen and (min-width: 1200px)
   {         
     margin-right: 50px;  
-  }
-}
-
-.nav-list
-{
-  @media screen and (min-width: 768px) and (max-width: 1199px)
-  {         
-    margin-right: 84px;  
   }
 }
 
@@ -48,6 +41,10 @@
   transform: scale(1.0);
   transition-duration: $time;
   transition-timing-function: $cubic;
+  @media screen and (min-width:768px) and (max-width: 1199px)
+  {
+    font-size: 12px;   
+  }
   &:hover,
   &:focus
   {

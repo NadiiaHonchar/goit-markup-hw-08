@@ -1,6 +1,6 @@
 .presentation__greed
 {
-    @extend %list;
+    @extend %list;    
     width: calc((100% - 60px)/3);
     &:not(:last-child)
     { 
@@ -10,6 +10,7 @@
  
 .presentation__image
 {
+    
     position: relative;
 }
 

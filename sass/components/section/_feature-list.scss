@@ -6,10 +6,6 @@
   display: flex;
     
 }
-.feature-list__greed
-{  
-  width: 450px;  
-}
 
 @media screen and (max-width: 767px)
 {
@@ -24,10 +20,12 @@
 {       
   flex-wrap: wrap;       
 }  
-  
+
+@media screen and (max-width: 767px){
 .feature-list__greed
 {
   flex-basis: 100%;    
+}
 }
 
   @media screen and (min-width: 768px)
@@ -63,7 +61,10 @@
   line-height: 1.1;
   margin-bottom: 10px;
   text-transform: uppercase;
-  text-align: center;
+  @media screen and (max-width: 767px)
+  {
+    text-align: center;    
+  }
 }
 
 .feature-list__image
