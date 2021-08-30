@@ -1,3 +1,11 @@
+.presentation
+{    
+  @extend %list;  
+  margin: 0;
+  padding: 0;
+  display: flex;    
+}
+
 .presentation__greed
 {
     @extend %list;    

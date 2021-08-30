@@ -261,7 +261,7 @@ summary {
   display: list-item;
 }
 
-.nav-list, .contact-nav, .feature-list, .feature-list__network, .presentation__greed, .contact-footer, .contact-footer:not(:last-child), .footer-list, .button-filter, .cards-list__item, ul {
+.nav-list, .contact-nav, .feature-list, .feature-list__network, .presentation, .presentation__greed, .contact-footer, .contact-footer:not(:last-child), .footer-list, .button-filter, .cards-list__item, ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1265,9 +1265,15 @@ summary {
   fill: #AFB1B8;
 }
 
-.presentation__greed {
+.presentation {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.presentation__greed {
   width: calc((100% - 60px)/3);
 }
 
